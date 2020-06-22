@@ -1,0 +1,313 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* BODY FONDO */
+
+.blue {
+    background: rgb(160, 238, 255);
+    background: linear-gradient(90deg, rgba(160, 238, 255, 1) 0%, rgba(18, 78, 91, 1) 100%);
+}
+
+.purple {
+    background: rgb(255, 238, 221);
+    background: linear-gradient(90deg, rgba(255, 238, 221, 1) 0%, rgba(186, 7, 89, 1) 100%);
+}
+
+.brown {
+    background: rgb(255, 89, 0);
+    background: linear-gradient(90deg, rgba(255, 89, 0, 0.6811099439775911) 6%, rgba(34, 5, 3, 1) 93%);
+}
+
+
+/* GLOBALES */
+
+.container {
+    max-width: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* CON{TAINER FLEX */
+
+div.container-grid {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    grid-template-columns: 30% 70%;
+}
+
+@media (max-width:630px) {
+    div.container-grid {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: initial;
+    }
+}
+
+
+/* SELECCIONAR COLOR */
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 3px 5px;
+    background-color: #ffffff;
+    width: 120px;
+    margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 5px #0000007a;
+}
+
+@media (max-width:630px) {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+ul li div.caja-c {
+    display: flex;
+    align-items: center;
+}
+
+ul li .circle-blue,
+.circle-purple,
+.circle-brown {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+/* CIRCULO AZUL */
+
+.circle-blue {
+    background-color: #35B0C0;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.circle-blue:hover {
+    transform: scale(1.1);
+}
+
+
+/* CIRCULO MORADO */
+
+.circle-purple {
+    background-color: #E3B0B1;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.circle-purple:hover {
+    transform: scale(1.1);
+}
+
+
+/* CIRCULO CAFE */
+
+.circle-brown {
+    background-color: #A73728;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.circle-brown:hover {
+    transform: scale(1.1);
+}
+
+ul li p {
+    color: rgb(138, 138, 138);
+    margin: 0 6px;
+}
+
+
+/* PALETA */
+
+div.paleta-float {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.paleta {
+    position: absolute;
+    width: 100%;
+}
+
+div.paleta-color {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    background-color: #FAF9F9;
+    box-shadow: 0 0 10px #313131;
+    border-radius: 30px;
+}
+
+@media (max-width:1200px) {
+    div.paleta-color {
+        width: 65%;
+    }
+}
+
+@media (max-width:980px) {
+    div.paleta-color {
+        width: 75%;
+    }
+}
+
+@media (max-width:720px) {
+    div.paleta-color {
+        width: 85%;
+    }
+}
+
+@media (max-width:630px) {
+    div.paleta-color {
+        width: 100%;
+    }
+}
+
+div.caja {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div.caja p {
+    color: rgb(80, 80, 80);
+    margin: 3px 0;
+}
+
+div.caja .color {
+    margin: 35px 0;
+}
+
+div.color .c-radius {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 6px #494949;
+}
+
+div.color .blue1 {
+    background-color: #0D5C75;
+}
+
+div.color .blue2 {
+    background-color: #199FB1;
+}
+
+div.color .blue3 {
+    background-color: #A5D1E1;
+}
+
+
+/* PALETAS */
+
+
+/* PALETA 1 */
+
+div.caja-img1 {
+    background-image: url(../img/Blue.jpg);
+    box-shadow: -8px 0 20px #313131;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+
+div.img-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+div.img-text h1 span {
+    margin-left: 60px;
+}
+
+
+/* PALETA 2 */
+
+div.caja-img2 {
+    background-image: url(../img/Purple.jpg);
+    box-shadow: -8px 0 20px #313131;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+
+div.color .purple1 {
+    background-color: #9A7787;
+}
+
+div.color .purple2 {
+    background-color: #E4AFB0;
+}
+
+div.color .purple3 {
+    background-color: #FED7BF;
+}
+
+div#palet2 {
+    display: none;
+}
+
+
+/* PALETA 3 */
+
+div.caja-img3 {
+    background-image: url(../img/Brown.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -8px 0 20px #313131;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+
+div.color .brown1 {
+    background-color: #3D1F1D;
+}
+
+div.color .brown2 {
+    background-color: #A73728;
+}
+
+div.color .brown3 {
+    background-color: #DF643F;
+}
+
+div#palet3 {
+    display: none;
+}
